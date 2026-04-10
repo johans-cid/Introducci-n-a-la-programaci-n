@@ -21,3 +21,14 @@ print(type(variable_texto))
 print(type(variable_entero))
 print(type(variable_decimal))
 print(type(variable_booleano))
+
+#print(dir(variable_texto)) esto dice los metodos
+print(variable_texto.split())
+print(variable_texto.title())
+print(variable_texto.upper())
+print(variable_texto.islower())
+print(variable_texto.split())
+
+#print(dir(variable_entero)) esto dice los metodos
+print(variable_entero.is_integer())
+print(variable_decimal.is_integer())
