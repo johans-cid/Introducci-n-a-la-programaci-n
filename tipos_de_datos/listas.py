@@ -1,12 +1,12 @@
 #Listas => List
 #Es una coleccion ORDENADA Y MUTABLE de datos de cualquier tipo
-#print("Listas en python")
-#mi_primera_lista = ["gato", 50, True]
-#nombre_personal = input("Ingrese su nombre: ")
-#print(mi_primera_lista)
-#print("El primer elemento de la lista es:{} y el segundo es {}".format(mi_primera_lista[0], mi_primera_lista[1]))
-#mi_primera_lista[0] = nombre_personal
-#print(mi_primera_lista)
+print("Listas en python")
+mi_primera_lista = ["gato", 50, True]
+nombre_personal = input("Ingrese su nombre: ")
+print(mi_primera_lista)
+print("El primer elemento de la lista es:{} y el segundo es {}".format(mi_primera_lista[0], mi_primera_lista[1]))
+mi_primera_lista[0] = nombre_personal
+print(mi_primera_lista)
 
 #Diccionarios => Dict
 #Es una coleccion ORDENADA Y MUTABLE de pares de datos de cualquier tipo
@@ -17,5 +17,5 @@ print(type(mi_primer_diccionario))
 print(mi_primer_diccionario)
 print("El primer dato del diccionario es: {}".format(mi_primer_diccionario["nombre"]))
 
-print(dir(mi_primer_diccionario))
+
 
