@@ -40,3 +40,11 @@ print(nombre_split)
 
 rut_split  = rut.split("-")
 print(rut_split)
+
+
+
+
+
+
+
+
