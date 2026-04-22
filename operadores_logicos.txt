@@ -1,0 +1,13 @@
+V o F
+o -> or
+y -> and
+
+V o V = V
+v o F = v
+F o V = v
+F o F = F 
+
+V o V = V
+v o F = F
+F o V = F
+F o F = F 
