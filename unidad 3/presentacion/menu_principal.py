@@ -1,4 +1,7 @@
 from datos import numero_version,titulo_app,menu_aplicacion,sub_menu,opcion_invalida
+from negocio import obtener_listado_rifas
+from negocio import obtener_listado_usuarios
+
 
 def menu_principal():
     print(f'\n{titulo_app} v{numero_version}')
@@ -11,8 +14,8 @@ def menu_principal():
         opcion = seleccionar_opcion(menu_aplicacion)
 
         if opcion == '1':
-            titulo_menu('SubMenú Rifas')
             while True:
+                titulo_menu('SubMenú Rifas')
                 for clave,valor in sub_menu.items():
                     if clave != '0':
                         print(f'[{clave}] - {valor + ' Rifas'}')
@@ -23,11 +26,14 @@ def menu_principal():
                 if opcion_sub_menu == '0':
                     print('Volviendo al menú anterior...')
                     break
+                elif opcion_sub_menu == '2':
+                    tabla_rifas = obtener_listado_rifas()
+                    print(tabla_rifas)
                 else:
                     print(opcion_invalida)
         elif opcion == '2':
-            titulo_menu('SubMenú Usuarios')
             while True:
+                titulo_menu('SubMenú Usuarios')
                 for clave,valor in sub_menu.items():
                     if clave != '0':
                         print(f'[{clave}] - {valor + ' Usuarios'}')
@@ -39,6 +45,9 @@ def menu_principal():
                 if opcion_sub_menu == '0':
                     print('Volviendo al menú anterior...')
                     break
+                elif opcion_sub_menu == "2":
+                    tabla_usuarios = obtener_listado_usuarios()
+                    print(tabla_usuarios)
                 else:
                     print(opcion_invalida)
         elif opcion == '0':
@@ -55,4 +64,5 @@ def titulo_menu(menu):
 def seleccionar_opcion(menu):
     opcion = input(f'\nSeleccione su Opción [0-{len(menu) - 1}]: ')
     return opcion
+
 

@@ -18,4 +18,4 @@ PATCH: Se incrementa cuando se corrigen errores o se hacen
 # Historial
 #   19.25.2026  : Inicio del proyecto (v1.0.0) 
 #                   Definir arquitectura en capas del proyecto (datos, negocio, presentacion). v1.0.0
-numero_version = "1.0.0"
+numero_version = "1.1.0"
