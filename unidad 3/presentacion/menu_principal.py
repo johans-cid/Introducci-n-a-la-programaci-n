@@ -1,6 +1,7 @@
 from datos import numero_version,titulo_app,menu_aplicacion,sub_menu,opcion_invalida
 from negocio import obtener_listado_rifas
 from negocio import obtener_listado_usuarios
+from presentacion import solicitar_datos_rifa
 
 
 def menu_principal():
@@ -26,6 +27,10 @@ def menu_principal():
                 if opcion_sub_menu == '0':
                     print('Volviendo al menú anterior...')
                     break
+                elif opcion_sub_menu == "1":
+                    datos = solicitar_datos_rifa()
+                    print(datos)
+
                 elif opcion_sub_menu == '2':
                     tabla_rifas = obtener_listado_rifas()
                     print(tabla_rifas)

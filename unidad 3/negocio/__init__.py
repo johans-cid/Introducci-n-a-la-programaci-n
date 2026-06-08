@@ -1,2 +1,2 @@
-from negocio.negocio_rifas import obtener_listado_rifas
+from negocio.negocio_rifas import obtener_listado_rifas, crear_nueva_rifa
 from negocio.negocio_usuarios import obtener_listado_usuarios
