@@ -1,1 +1,2 @@
-listado_rifas = []
+import datetime
+listado_rifas =[{'n': 1, 'nombre': 'Test', 'precio': 1000, 'cantidad_rifas': 50, 'numeros_rifa': 10, 'fecha_creacion': datetime.date(2026, 6, 9), 'fecha_lanzamiento': datetime.datetime(2026, 6, 20, 0, 0), 'premios': {'Premio 1': 'Peluche', 'Premio 2': 'Telefono', 'Premio 3': 'Tablet', 'Premio 4': 'Oso'}}, {'n': 2, 'nombre': 'Las villas', 'precio': 3000, 'cantidad_rifas': 15, 'numeros_rifa': 7, 'fecha_creacion': datetime.date(2026, 6, 9), 'fecha_lanzamiento': datetime.datetime(2026, 7, 30, 0, 0), 'premios': {'Premio 1': 'Una Polera', 'Premio 2': 'Chutiadores', 'Premio 3': 'Bebida', 'Premio 4': 'Pisco+Bebida'}}]

@@ -8,6 +8,7 @@ def guardar_rifa(rifa):
         ruta_absoluta = os.path.abspath(ruta)
         ruta_real = os.path.realpath(ruta_absoluta)
         with open(ruta_real,"+w") as archivo:
+            archivo.write("import datetime\n")
             archivo.write(f"listado_rifas ={listado_rifas}")
             archivo.close()
     except Exception as error:
