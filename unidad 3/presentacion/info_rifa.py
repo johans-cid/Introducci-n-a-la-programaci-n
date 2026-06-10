@@ -33,7 +33,7 @@ def convertir_texto_fecha(mensaje_input):
     while not isinstance(fecha_lanzamiento, (date, datetime)):
         try: 
             fecha_lanzamiento = input(f"{mensaje_input}")
-            fecha_lanzamiento = datetime.strptime(fecha_lanzamiento, "%d/%m/%Y")
+            fecha_lanzamiento = date.strptime(fecha_lanzamiento, "%d/%m/%Y")
             return fecha_lanzamiento
         except ValueError:
             print("Formato de fecha incorrecto. Asegúrate de usar dd/mm/aaaa.")

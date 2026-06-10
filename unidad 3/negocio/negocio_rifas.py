@@ -12,9 +12,8 @@ def obtener_listado_rifas():
     return tabla_rifas
 
 def numero_rifa():
-    if True:
-        num = len(listado_rifas)+1
-        return num
+    num = len(listado_rifas)+1
+    return num
     
 
 
@@ -31,6 +30,7 @@ def crear_nueva_rifa(n,nombre, precio, cantidad_rifas, numeros_rifa, fecha_creac
         
     }
     guardar_rifa(nueva_rifa)
+    
 
 
 
