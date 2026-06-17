@@ -1,16 +1,1 @@
-
-listado_usuarios = [
-    {
-     "nombre":"Ignacio",
-     "apellido":"cid",
-     "fecha nacimiento":"12/01/2007",
-     "direccion":"los radales 339",
-     "tipo_usuario":"admin"
-    }, {
-     "nombre":"Juanito",
-     "apellido":"perez",
-     "fecha nacimiento":"15/05/2006",
-     "direccion":"los naranjos",
-     "tipo_usuario":"lector"
-    }
-]
+listado_usuarios =[{'id': 1, 'nombre': 'Test', 'rut': '12345678-1', 'nacionalidad': 'Chileno', 'telefono': '988118811', 'email': 'test@test.cl', 'tipo_usuario': 'observador', 'contraseña': b'$2b$12$83OBL1G/9wnN5by1Da1ebefoMXXDz5XHhZ01ac56rMRM9LntyTcdS'}]
