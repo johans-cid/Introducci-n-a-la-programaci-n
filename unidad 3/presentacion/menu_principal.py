@@ -1,10 +1,19 @@
 from datos import numero_version,titulo_app,menu_aplicacion,sub_menu,opcion_invalida
 from negocio import obtener_listado_rifas
-from negocio import obtener_listado_usuarios
-from presentacion import solicitar_datos_rifa, solicitar_datos_usuario
+from negocio import obtener_listado_usuarios, buscar_usuario_correo
+from presentacion import solicitar_datos_rifa, solicitar_datos_usuario, ingresar_correo
 
-
-
+def login():
+    print(f"\n{titulo_app} v{numero_version}")
+    print(f"{"=" * len(titulo_app)}=={"=" * len(numero_version)}")
+    titulo_menu("Login")
+    correo = ingresar_correo()
+    usuario = buscar_usuario_correo(correo)
+    while True:
+        if usuario:
+            asdaas
+        else:
+            print("Usuario no encontrado... Intente nuevamente")
 def menu_principal():
     print(f'\n{titulo_app} v{numero_version}')
     print(f'{'=' * len(titulo_app)}=={'=' * len(numero_version)}')
