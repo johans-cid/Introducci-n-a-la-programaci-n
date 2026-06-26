@@ -23,3 +23,8 @@ def crear_nuevo_usuario(nombre,rut,nacionalidad,telefono,email,tipo_usuario,cont
     }
     listado_usuarios.append(nuevo_usuario)
     guardar_usuario(listado_usuarios)
+
+def buscar_usuario_correo(correo):
+    for usuario in listado_usuarios:
+        if correo == usuario["email"]:
+            return usuario
